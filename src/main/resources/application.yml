@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Recomon
+  profiles:
+    active: dev
+
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: BASIC
+naver:
+  api:
+    url: "https://openapi.naver.com"
